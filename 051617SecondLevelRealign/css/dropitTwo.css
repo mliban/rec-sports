@@ -1,0 +1,84 @@
+
+nav ul.randy {
+  list-style: none;
+}
+nav ul.randy a{
+  color:#333;
+}
+
+nav ul.randy li {
+  display: block;
+  position: relative;
+  float: left;
+  background:;
+  text-align: left;
+}
+
+/* This hides the dropdowns */
+
+
+nav li ul { display: none; }
+nav ul li a {
+  display: block;
+  padding:8px 0 8px 16px;
+  width:100%;
+  margin:0;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+nav ul li a:hover { color:#fff; }
+
+/* Display the dropdown */
+
+
+nav li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+nav li:hover li { float: none; }
+
+nav li:hover a { background:; }
+
+nav li:hover li a:hover { background: #2c3e50; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+nav ul.randy ul{
+  font-size:80%;
+  background:#333;
+
+  padding:0 16px 16px 0;
+  margin:0;
+}
+nav ul.randy ul li{
+  margin:0;
+  padding:0;
+}
+nav ul.randy li li a{
+  color:#fff;
+}
+
+nav ul.randy ul ul {
+  left: 100%;
+  font-size:100%;
+  top: 0;
+  background:#333;
+  border-left:#ffb800 5px solid;
+  padding-right:24px;
+  margin-left:16px;
+}
+
+/* Simple clearfix */
+
+
+
+nav ul.randy:before,
+nav ul.randy:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+nav ul.randy:after { clear: both; }

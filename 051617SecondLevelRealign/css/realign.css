@@ -1,0 +1,105 @@
+body{
+  background:#efefef;
+}
+.photoBanner{
+  max-height:400px;
+  overflow:hidden;
+}
+
+.secondary-message h3{
+  text-shadow: none;
+  font-weight: 900;
+  font-size: 900%;
+}
+.generic-container h4{
+  color:#288fc0;
+
+}
+
+.generic-container h4,
+.breadcrumbs{
+  text-align: center;
+}
+
+.bigShortBorder {
+    border: 0;
+    height: 0;
+    border-top: 10px solid #288fc0;
+    width:7%;
+    margin:0 auto;
+    margin-bottom:16px;
+}
+
+
+.recCarousel{
+  width:70%;
+  margin:0 auto;
+
+}
+.recCarousel img{
+  width:100%;
+  z-index: -1;
+}
+
+button.slick-prev.slick-arrow
+{
+  background:url('images/img-prev.png') no-repeat;
+  background-size: 75px;
+  text-indent: -9999px;
+}
+.slick-prev{
+  width:75px;
+  height:75px;
+  z-index:1;
+  left:50px;
+}
+button.slick-next.slick-arrow
+{
+  background:url('images/img-next.png') no-repeat;
+  background-size: 75px;
+  text-indent: -9999px;
+}
+button.slick-prev.slick-arrow:hover,
+button.slick-next.slick-arrow:hover{
+  background-color:#64c9f8;
+  width:75px;
+  height:75px;
+  border-radius: 50%;
+}
+.slick-next{
+  width:75px;
+  height:75px;
+  z-index:1;
+  right:50px;
+}
+.generic-container{
+  float: none;
+  margin-right:0;
+}
+
+
+
+@media only screen and (max-width : 768px) {
+  .secondary-message h3{
+    text-shadow: none;
+    font-weight: 900;
+    font-size: 500%;
+  }
+}
+
+@media only screen and (max-width : 425px) {
+  .imgCallout img{
+    width:100%;
+    height:auto;
+    float:none;
+    margin-left:0;
+    margin-bottom:8px;
+  }
+  .photoBanner{
+    max-height:200px;
+  }
+  .secondary-message h3{
+    font-size: 300%;
+  }
+
+}

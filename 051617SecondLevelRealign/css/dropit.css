@@ -1,0 +1,106 @@
+
+nav ul.randy {
+  list-style: none;
+}
+nav ul.randy a{
+  color:#333;
+  float;left;
+}
+
+nav ul.randy li {
+  display: block;
+  position: relative;
+  float: left;
+  text-align: left;
+  margin-right:16px;
+  padding-right: 16px;
+}
+
+/* This hides the dropdowns */
+li .fa-chevron-down{
+  display: inline-block;
+  position: absolute;
+  right:-10px;
+  top:14px;
+  width:20px;
+}
+
+nav li ul { display: none; }
+nav ul li a {
+  display: block;
+  padding:8px 0 8px 16px;
+  width:100%;
+  margin:0;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+nav ul li a:hover { color:#ffb800; }
+
+/* Display the dropdown */
+
+
+nav li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+nav li:hover li { float: none; }
+
+nav li:hover a { background:; }
+
+nav li:hover li a:hover { color:#ffb800; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+nav ul.randy ul{
+  font-size:80%;
+  background:#333;
+
+  padding:0 16px 16px 0;
+  margin:0;
+}
+nav ul.randy ul li{
+  margin:0;
+  padding:0;
+}
+nav ul.randy li li a{
+  color:#fff;
+}
+
+nav ul.randy ul ul {
+  left: 100%;
+  font-size:100%;
+  top: 0;
+  background:#333;
+  border-left:#ffb800 5px solid;
+  padding-right:24px;
+  margin-left:16px;
+}
+
+/* Simple clearfix */
+.fa-lock{
+  left:12px !important;
+  top:16px !important;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram{
+  top:6px !important;
+}
+
+
+nav ul.randy:before,
+nav ul.randy:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+nav ul.randy:after { clear: both; }
+
+@media only screen and (max-width : 768px) {
+  nav li:hover > ul {
+    position: relative;
+  }
+}
