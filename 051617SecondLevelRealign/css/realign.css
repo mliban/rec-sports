@@ -13,7 +13,6 @@ body{
 }
 .generic-container h4{
   color:#288fc0;
-
 }
 
 .generic-container h4,
@@ -29,7 +28,6 @@ body{
     margin:0 auto;
     margin-bottom:16px;
 }
-
 
 .recCarousel{
   width:70%;
@@ -78,7 +76,6 @@ button.slick-next.slick-arrow:hover{
 }
 
 
-
 @media only screen and (max-width : 768px) {
   .secondary-message h3{
     text-shadow: none;
@@ -101,5 +98,4 @@ button.slick-next.slick-arrow:hover{
   .secondary-message h3{
     font-size: 300%;
   }
-
 }
